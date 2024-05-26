@@ -1,0 +1,52 @@
+1, Anatomy, 0
+2, Astronomy, 0
+3, Algebra, 1
+4, Band/Orchestra, 0
+5, Ballet, 0
+6, Bible Studies, 0
+7, Biology, 1
+8, Business and Entrepreneurship, 0
+9, Calculus, 0
+10, Career Exploration, 0
+11, Chemistry, 1
+12, Chorus, 0
+13, Civics and Government, 1
+14, Computer Science, 0
+15, Creative Writing, 0
+16, Dance, 0
+17, Digital Literacy, 1
+18, Drama, 0
+19, Economics, 1
+20, Engineering Design, 0
+21, English Language Arts, 1
+22, Environmental Science, 1
+23, Film Studies, 0
+24, Foreign Language (French), 0
+25, Foreign Language (German), 0
+26, Foreign Language (Hebrew), 0
+27, Foreign Language (Spanish), 0
+28, Geography, 1
+29, Health, 1
+30, Jewish History, 1
+31, Jewish Philosophy, 0
+32, Latin, 0
+33, Literature, 1
+34, Mathematics, 1
+35, Media Literacy, 1
+36, Modern Art, 0
+37, Music, 0
+38, Mythology, 0
+39, Physical Education, 1
+40, Physics, 1
+41, Psychology, 0
+42, Robotics, 0
+43, Science (General), 1
+44, Social Studies (General), 1
+45, Sociology, 0
+46, Speech and Debate, 0
+47, Sports, 1
+48, Statistics, 0
+49, Talmud, 1
+50, United States History, 1
+51, Visual Arts, 0
+52, World History, 1 
