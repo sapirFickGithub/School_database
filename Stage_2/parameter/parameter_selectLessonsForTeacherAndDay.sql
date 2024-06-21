@@ -1,4 +1,4 @@
--- recieve teacher id and a day, and display info of all lessons given by that techer in that day
+-- recieve teacher id and a day, and display info of all lessons given by that teacher in that day
 SELECT tfirst_name|| ' ' ||tlast_name AS teacher_name, class_ID, subject_name, lesson_hour
 FROM Lesson l inner join subject s ON l.subject_id = s.subject_id
      inner join teacher t ON t.teacher_id = l.teacher_id
