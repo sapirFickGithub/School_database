@@ -1,5 +1,5 @@
 ﻿prompt PL/SQL Developer import file
-prompt Created on Friday, June 21, 2024 by dasst
+prompt Created on Sunday, July 14, 2024 by dasst
 set feedback off
 set define off
 prompt Creating ROOM...
@@ -297,14 +297,14 @@ alter table LESSON disable all triggers;
 prompt Disabling triggers for STUDENT...
 alter table STUDENT disable all triggers;
 prompt Disabling foreign key constraints for CLASS_...
-alter table CLASS_ disable constraint SYS_C007437;
-alter table CLASS_ disable constraint SYS_C007438;
+alter table CLASS_ disable constraint SYS_C007538;
+alter table CLASS_ disable constraint SYS_C007539;
 prompt Disabling foreign key constraints for LESSON...
-alter table LESSON disable constraint SYS_C007450;
-alter table LESSON disable constraint SYS_C007451;
-alter table LESSON disable constraint SYS_C007452;
+alter table LESSON disable constraint SYS_C007551;
+alter table LESSON disable constraint SYS_C007552;
+alter table LESSON disable constraint SYS_C007553;
 prompt Disabling foreign key constraints for STUDENT...
-alter table STUDENT disable constraint SYS_C007462;
+alter table STUDENT disable constraint SYS_C007563;
 prompt Deleting STUDENT...
 delete from STUDENT;
 commit;
@@ -327,13 +327,13 @@ prompt Loading ROOM...
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (1, 62, 1, to_date('22-06-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (2, 21, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (2, 21, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (3, 55, 0, to_date('07-03-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (4, 63, 1, to_date('28-02-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (5, 63, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (5, 63, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (6, 66, 1, to_date('20-04-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -375,17 +375,17 @@ values (24, 57, 0, to_date('17-11-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (25, 26, 1, to_date('23-05-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (26, 29, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (26, 29, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (27, 40, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (27, 40, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (28, 29, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (28, 29, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (29, 48, 1, to_date('05-09-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (30, 40, 1, to_date('30-04-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (31, 68, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (31, 68, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (32, 32, 1, to_date('04-12-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -399,7 +399,7 @@ values (36, 63, 0, to_date('08-05-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (37, 67, 1, to_date('17-06-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (38, 45, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (38, 45, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (39, 23, 1, to_date('03-11-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -407,7 +407,7 @@ values (40, 28, 0, to_date('02-04-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (41, 23, 1, to_date('09-05-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (42, 24, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (42, 24, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (43, 63, 1, to_date('24-06-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -425,7 +425,7 @@ values (49, 59, 1, to_date('20-02-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (50, 20, 0, to_date('17-03-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (51, 43, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (51, 43, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (52, 68, 0, to_date('27-05-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -439,17 +439,17 @@ values (56, 61, 1, to_date('06-12-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (57, 54, 1, to_date('15-01-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (58, 52, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (58, 52, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (59, 28, 0, to_date('16-03-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (60, 23, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (60, 23, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (61, 45, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (61, 45, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (62, 44, 0, to_date('16-01-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (63, 62, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (63, 62, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (64, 61, 0, to_date('17-03-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -477,9 +477,9 @@ values (75, 38, 0, to_date('19-08-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (76, 24, 0, to_date('23-08-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (77, 56, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (77, 56, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (78, 37, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (78, 37, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (79, 32, 1, to_date('25-01-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -505,17 +505,17 @@ values (89, 68, 1, to_date('11-02-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (90, 56, 0, to_date('15-09-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (91, 36, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (91, 36, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (92, 55, 1, to_date('31-01-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (93, 44, 1, to_date('02-06-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (94, 23, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (94, 23, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (95, 35, 0, to_date('18-02-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (96, 30, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (96, 30, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (97, 43, 1, to_date('05-03-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -537,7 +537,7 @@ values (104, 53, 0, to_date('30-04-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (105, 56, 0, to_date('27-04-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (106, 34, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (106, 34, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (107, 47, 0, to_date('10-06-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -551,13 +551,13 @@ values (111, 54, 0, to_date('19-03-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (112, 20, 0, to_date('09-08-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (113, 26, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (113, 26, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (114, 67, 0, to_date('13-08-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (115, 25, 1, to_date('03-02-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (116, 35, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (116, 35, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (117, 23, 1, to_date('28-12-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -581,7 +581,7 @@ values (126, 33, 1, to_date('08-08-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (127, 33, 1, to_date('19-12-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (128, 21, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (128, 21, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (129, 55, 1, to_date('21-10-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -589,7 +589,7 @@ values (130, 27, 1, to_date('01-02-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (131, 31, 1, to_date('28-08-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (132, 26, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (132, 26, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (133, 20, 0, to_date('15-04-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -609,27 +609,27 @@ values (140, 59, 0, to_date('18-07-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (141, 22, 1, to_date('20-05-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (142, 31, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (142, 31, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (143, 24, 0, to_date('26-09-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (144, 23, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (144, 23, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (145, 48, 0, to_date('09-11-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (146, 38, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (146, 38, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (147, 44, 1, to_date('16-05-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (148, 70, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (148, 70, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (149, 54, 1, to_date('06-02-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (150, 49, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (150, 49, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (151, 62, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (151, 62, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (152, 47, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (152, 47, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (153, 65, 0, to_date('17-12-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -653,13 +653,13 @@ values (162, 40, 0, to_date('16-07-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (163, 35, 0, to_date('01-10-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (164, 54, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (164, 54, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (165, 69, 1, to_date('05-07-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (166, 70, 0, to_date('08-06-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (167, 22, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (167, 22, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (168, 64, 1, to_date('23-08-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -671,13 +671,13 @@ values (171, 31, 0, to_date('24-05-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (172, 58, 1, to_date('28-10-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (173, 34, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (173, 34, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (174, 28, 0, to_date('03-08-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (175, 64, 1, to_date('04-05-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (176, 67, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (176, 67, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (177, 22, 1, to_date('26-01-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -691,7 +691,7 @@ values (181, 33, 1, to_date('01-10-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (182, 35, 0, to_date('07-04-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (183, 48, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (183, 48, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (184, 58, 1, to_date('25-11-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -705,7 +705,7 @@ values (188, 42, 1, to_date('14-10-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (189, 44, 1, to_date('21-03-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (190, 32, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (190, 32, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (191, 53, 0, to_date('19-05-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -717,9 +717,9 @@ values (194, 57, 1, to_date('21-04-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (195, 20, 0, to_date('17-01-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (196, 67, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (196, 67, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (197, 51, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (197, 51, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (198, 68, 1, to_date('02-05-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -737,7 +737,7 @@ values (203, 48, 1, to_date('22-11-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (204, 27, 1, to_date('28-02-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (205, 55, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (205, 55, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (206, 42, 1, to_date('11-04-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -751,19 +751,19 @@ values (210, 49, 0, to_date('25-07-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (211, 67, 1, to_date('26-11-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (212, 69, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (212, 69, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (213, 30, 0, to_date('04-07-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (214, 37, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (214, 37, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (215, 59, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (215, 59, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (216, 59, 0, to_date('09-11-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (217, 56, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (217, 56, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (218, 64, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (218, 64, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (219, 42, 1, to_date('23-10-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -771,13 +771,13 @@ values (220, 47, 0, to_date('25-11-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (221, 38, 0, to_date('03-09-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (222, 40, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (222, 40, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (223, 40, 0, to_date('11-05-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (224, 59, 0, to_date('11-11-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (225, 20, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (225, 20, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (226, 40, 1, to_date('15-01-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -797,7 +797,7 @@ values (233, 66, 1, to_date('17-07-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (234, 42, 1, to_date('19-04-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (235, 32, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (235, 32, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (236, 70, 0, to_date('04-04-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -813,7 +813,7 @@ values (241, 55, 0, to_date('25-09-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (242, 36, 0, to_date('21-11-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (243, 25, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (243, 25, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (244, 61, 1, to_date('01-10-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -839,7 +839,7 @@ values (254, 21, 0, to_date('03-09-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (255, 33, 1, to_date('22-09-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (256, 34, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (256, 34, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (257, 41, 0, to_date('21-01-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -869,21 +869,21 @@ values (269, 66, 1, to_date('09-01-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (270, 68, 0, to_date('01-10-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (271, 25, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (271, 25, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (272, 34, 0, to_date('28-07-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (273, 54, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (273, 54, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (274, 33, 1, to_date('13-05-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (275, 52, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (275, 52, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (276, 25, 0, to_date('04-06-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (277, 23, 0, to_date('12-01-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (278, 64, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (278, 64, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (279, 25, 0, to_date('05-12-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -897,11 +897,11 @@ values (283, 40, 0, to_date('04-04-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (284, 63, 1, to_date('29-03-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (285, 54, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (285, 54, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (286, 37, 0, to_date('12-07-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (287, 54, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (287, 54, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (288, 20, 0, to_date('03-01-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -909,7 +909,7 @@ values (289, 61, 0, to_date('27-01-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (290, 22, 0, to_date('21-11-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (291, 57, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (291, 57, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (292, 50, 0, to_date('10-11-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -917,7 +917,7 @@ values (293, 58, 0, to_date('13-03-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (294, 49, 1, to_date('16-12-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (295, 27, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (295, 27, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (296, 22, 1, to_date('30-04-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -937,9 +937,9 @@ values (302, 31, 0, to_date('09-04-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (303, 51, 1, to_date('24-03-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (304, 50, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (304, 50, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (305, 40, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (305, 40, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (306, 49, 1, to_date('13-04-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -947,9 +947,9 @@ values (307, 42, 0, to_date('16-01-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (308, 40, 0, to_date('02-02-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (309, 29, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (309, 29, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (310, 67, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (310, 67, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (311, 20, 1, to_date('13-05-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -967,7 +967,7 @@ values (317, 38, 0, to_date('04-10-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (318, 44, 0, to_date('21-11-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (319, 51, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (319, 51, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (320, 30, 1, to_date('28-08-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -975,7 +975,7 @@ values (321, 51, 1, to_date('14-07-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (322, 64, 0, to_date('22-11-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (323, 54, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (323, 54, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (324, 65, 1, to_date('17-06-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -983,23 +983,23 @@ values (325, 54, 1, to_date('23-02-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (326, 61, 1, to_date('20-12-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (327, 36, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (327, 36, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (328, 32, 0, to_date('22-09-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (329, 63, 0, to_date('01-06-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (330, 49, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (330, 49, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (331, 37, 0, to_date('20-10-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (332, 36, 0, to_date('04-12-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (333, 28, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (333, 28, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (334, 67, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (334, 67, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (335, 30, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (335, 30, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (336, 51, 0, to_date('27-07-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -1021,7 +1021,7 @@ values (344, 23, 0, to_date('04-07-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (345, 43, 1, to_date('04-09-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (346, 53, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (346, 53, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (347, 31, 0, to_date('03-10-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -1029,7 +1029,7 @@ values (348, 61, 0, to_date('11-08-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (349, 64, 1, to_date('22-05-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (350, 38, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (350, 38, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (351, 49, 1, to_date('17-10-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -1045,13 +1045,13 @@ values (356, 22, 1, to_date('23-03-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (357, 20, 1, to_date('09-09-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (358, 61, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (358, 61, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (359, 63, 1, to_date('09-10-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (360, 69, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (360, 69, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (361, 46, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (361, 46, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (362, 49, 1, to_date('05-07-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -1059,7 +1059,7 @@ values (363, 59, 1, to_date('22-11-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (364, 26, 0, to_date('27-07-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (365, 63, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (365, 63, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (366, 52, 1, to_date('31-12-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -1075,9 +1075,9 @@ values (371, 55, 1, to_date('02-12-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (372, 47, 0, to_date('27-11-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (373, 42, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (373, 42, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (374, 27, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (374, 27, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (375, 63, 0, to_date('03-07-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -1087,7 +1087,7 @@ values (377, 57, 0, to_date('11-04-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (378, 70, 1, to_date('13-07-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (379, 56, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (379, 56, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (380, 32, 0, to_date('12-01-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -1095,23 +1095,23 @@ values (381, 62, 0, to_date('30-04-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (382, 57, 0, to_date('05-04-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (383, 45, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (383, 45, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (384, 54, 1, to_date('15-03-2023', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (385, 46, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (385, 46, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (386, 36, 1, to_date('07-10-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (387, 26, 1, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (387, 26, 1, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (388, 49, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (388, 49, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (389, 58, 1, to_date('18-04-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (390, 48, 1, to_date('13-11-2020', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
-values (391, 43, 0, to_date('16-06-2024', 'dd-mm-yyyy'));
+values (391, 43, 0, to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
 values (392, 63, 0, to_date('25-05-2021', 'dd-mm-yyyy'));
 insert into ROOM (room_id, max_capacity, is_lab, last_maintenance_check)
@@ -1957,7 +1957,7 @@ values (6, 1, 272, 5);
 insert into CLASS_ (class_id, grade, teacher_id, room_id)
 values (7, 12, 384, 106);
 insert into CLASS_ (class_id, grade, teacher_id, room_id)
-values (8, 11, 353, 2);
+values (8, 11, 353, 35);
 insert into CLASS_ (class_id, grade, teacher_id, room_id)
 values (9, 2, 397, 157);
 insert into CLASS_ (class_id, grade, teacher_id, room_id)
@@ -1979,7 +1979,7 @@ values (17, 12, 234, 316);
 insert into CLASS_ (class_id, grade, teacher_id, room_id)
 values (18, 2, 5, 140);
 insert into CLASS_ (class_id, grade, teacher_id, room_id)
-values (19, 8, 381, 3);
+values (19, 8, 381, 2);
 insert into CLASS_ (class_id, grade, teacher_id, room_id)
 values (20, 8, 364, 152);
 insert into CLASS_ (class_id, grade, teacher_id, room_id)
@@ -2938,11 +2938,11 @@ values (5, 'Sarah', 'Harris', to_date('30-12-2017', 'dd-mm-yyyy'), 575968929, 'D
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (7, 'Theodore', 'Evans', to_date('09-10-2011', 'dd-mm-yyyy'), 581154956, 'Henry', 'Jennifer', 3);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (9, 'Daniel', 'Thomas', to_date('22-09-2005', 'dd-mm-yyyy'), 545467347, 'Joseph', 'Patricia', 21);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (10, 'Susan', 'Anderson', to_date('13-04-2014', 'dd-mm-yyyy'), 556407681, 'Adam', 'Lucia', 1);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (12, 'Keith', 'Roberts', to_date('16-04-2012', 'dd-mm-yyyy'), 580489883, 'Patrick', 'Janet', 27);
+insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
+values (13, 'David', 'Rodriguez', to_date('16-05-2018', 'dd-mm-yyyy'), 551793120, 'George', 'Angela', 36);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (14, 'Victoria', 'Smith', to_date('22-09-2006', 'dd-mm-yyyy'), 583976968, 'Travis', 'Pamela', 33);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -2951,10 +2951,6 @@ insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathe
 values (16, 'Roy', 'Moore', to_date('02-11-2014', 'dd-mm-yyyy'), 544552372, 'Ethan', 'Mia', 15);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (17, 'Abigail', 'Hernandez', to_date('23-12-2012', 'dd-mm-yyyy'), 546531441, 'Eric', 'Stephanie', 29);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (18, 'Andrew', 'Clark', to_date('18-08-2005', 'dd-mm-yyyy'), 550254262, 'Diego', 'Phoebe', 38);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (19, 'Caroline', 'Anderson', to_date('13-05-2006', 'dd-mm-yyyy'), 557114103, 'Walter', 'Phoebe', 22);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (20, 'Isaiah', 'Nelson', to_date('11-11-2017', 'dd-mm-yyyy'), 519345594, 'Ronald', 'Lisa', 22);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -2982,8 +2978,6 @@ values (40, 'Jacob', 'Nguyen', to_date('05-01-2007', 'dd-mm-yyyy'), 551354560, '
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (42, 'Heather', 'Robinson', to_date('06-08-2008', 'dd-mm-yyyy'), 565140285, 'Eric', 'Tiffany', 26);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (43, 'Charles', 'Wilson', to_date('29-11-2005', 'dd-mm-yyyy'), 553151314, 'Juan', 'Nancy', 13);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (45, 'Vincent', 'Lee', to_date('03-04-2011', 'dd-mm-yyyy'), 543636551, 'Sebastian', 'Monica', 13);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (47, 'Margaret', 'Young', to_date('21-10-2016', 'dd-mm-yyyy'), 535175866, 'Andrew', 'Lydia', 18);
@@ -2997,8 +2991,6 @@ insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathe
 values (54, 'Cody', 'Campbell', to_date('21-09-2010', 'dd-mm-yyyy'), 589785335, 'Albert', 'Stephanie', 19);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (55, 'Leslie', 'Miller', to_date('07-07-2013', 'dd-mm-yyyy'), 561934338, 'Isaac', 'Danielle', 38);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (56, 'Ryan', 'Nelson', to_date('20-01-2005', 'dd-mm-yyyy'), 516240171, 'Cody', 'Alexis', 38);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (57, 'Zachary', 'Garcia', to_date('13-12-2014', 'dd-mm-yyyy'), 597518023, 'Cody', 'Kelly', 4);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3015,8 +3007,6 @@ insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathe
 values (66, 'Shirley', 'Nelson', to_date('14-03-2011', 'dd-mm-yyyy'), 534178182, 'Abraham', 'Jasmine', 33);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (67, 'Laura', 'Wilson', to_date('02-12-2011', 'dd-mm-yyyy'), 537788912, 'Adam', 'Charlotte', 30);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (68, 'Courtney', 'Rodriguez', to_date('23-03-2006', 'dd-mm-yyyy'), 548752704, 'Jacob', 'Sophia', 10);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (71, 'Nathan', 'Anderson', to_date('13-09-2009', 'dd-mm-yyyy'), 556710704, 'Vincent', 'Jennifer', 23);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3066,6 +3056,8 @@ values (102, 'Nicholas', 'Garcia', to_date('29-01-2009', 'dd-mm-yyyy'), 52776765
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (104, 'Heather', 'Roberts', to_date('17-03-2008', 'dd-mm-yyyy'), 585481271, 'Jesse', 'Madison', 11);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
+values (105, 'Thomas', 'Robinson', to_date('26-01-2018', 'dd-mm-yyyy'), 560259224, 'Theodore', 'Hayley', 29);
+insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (106, 'Anthony', 'Hernandez', to_date('24-10-2008', 'dd-mm-yyyy'), 578863284, 'Christopher', 'Sandra', 2);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (107, 'Laura', 'Taylor', to_date('03-04-2012', 'dd-mm-yyyy'), 527134416, 'Zachary', 'Alana', 28);
@@ -3082,10 +3074,6 @@ values (114, 'Cole', 'Mitchell', to_date('18-04-2014', 'dd-mm-yyyy'), 560826081,
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (115, 'Lillian', 'Lewis', to_date('27-06-2010', 'dd-mm-yyyy'), 585744067, 'Sebastian', 'Tiffany', 36);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (116, 'Dustin', 'Lewis', to_date('24-06-2006', 'dd-mm-yyyy'), 575952384, 'George', 'Rachel', 39);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (117, 'Isaac', 'Watson', to_date('07-06-2006', 'dd-mm-yyyy'), 536388836, 'Julian', 'Madison', 33);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (118, 'Aaron', 'Lee', to_date('11-10-2015', 'dd-mm-yyyy'), 515240356, 'Julian', 'Cheryl', 35);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (119, 'Amelia', 'Allen', to_date('03-01-2007', 'dd-mm-yyyy'), 590409951, 'Wesley', 'Nancy', 6);
@@ -3098,9 +3086,9 @@ values (123, 'Tyler', 'Young', to_date('17-03-2013', 'dd-mm-yyyy'), 579075642, '
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (124, 'Daniel', 'Taylor', to_date('08-07-2011', 'dd-mm-yyyy'), 520503461, 'Ryan', 'Bridget', 7);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (126, 'Harold', 'Miller', to_date('19-02-2010', 'dd-mm-yyyy'), 548679916, 'Caleb', 'Michelle', 17);
+values (125, 'Brandon', 'Nelson', to_date('05-01-2018', 'dd-mm-yyyy'), 525521038, 'Noah', 'Luna', 39);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (127, 'Charles', 'Hernandez', to_date('02-07-2005', 'dd-mm-yyyy'), 523482174, 'Jacob', 'Angela', 30);
+values (126, 'Harold', 'Miller', to_date('19-02-2010', 'dd-mm-yyyy'), 548679916, 'Caleb', 'Michelle', 17);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (129, 'Jonathan', 'Williams', to_date('29-11-2009', 'dd-mm-yyyy'), 544438996, 'Brian', 'Kristen', 6);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3109,8 +3097,6 @@ insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathe
 values (132, 'Faith', 'Thomas', to_date('02-09-2017', 'dd-mm-yyyy'), 529068539, 'Brian', 'Evelyn', 6);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (133, 'Gabriel', 'Sanchez', to_date('30-07-2006', 'dd-mm-yyyy'), 544371226, 'Owen', 'Laura', 25);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (135, 'Leonardo', 'Robinson', to_date('08-06-2005', 'dd-mm-yyyy'), 593911753, 'Cole', 'Shirley', 16);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (136, 'Kevin', 'Nguyen', to_date('10-10-2009', 'dd-mm-yyyy'), 540228165, 'Sebastian', 'Luna', 23);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3127,8 +3113,6 @@ insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathe
 values (142, 'Kristen', 'Allen', to_date('14-01-2009', 'dd-mm-yyyy'), 581300682, 'Walter', 'Cheryl', 37);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (143, 'Antonio', 'Garcia', to_date('06-02-2009', 'dd-mm-yyyy'), 581545388, 'Javier', 'Luna', 37);
-commit;
-prompt 100 records committed...
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (144, 'Jordan', 'Lee', to_date('19-06-2007', 'dd-mm-yyyy'), 581474390, 'Leonardo', 'Ruby', 24);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3143,6 +3127,8 @@ insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathe
 values (151, 'Stephen', 'Garcia', to_date('09-09-2006', 'dd-mm-yyyy'), 512127328, 'Joseph', 'Catherine', 11);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (153, 'Edward', 'Williams', to_date('22-02-2010', 'dd-mm-yyyy'), 587317546, 'Owen', 'Ashley', 4);
+commit;
+prompt 100 records committed...
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (155, 'Scott', 'Phillips', to_date('06-03-2012', 'dd-mm-yyyy'), 553261420, 'Dennis', 'Natalie', 11);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3182,6 +3168,8 @@ values (182, 'Jane', 'Adams', to_date('22-06-2016', 'dd-mm-yyyy'), 564875750, 'Z
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (185, 'Charlene', 'Allen', to_date('20-01-2014', 'dd-mm-yyyy'), 527430235, 'Isaiah', 'Abigail', 39);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
+values (186, 'Jayden', 'Johnson', to_date('14-07-2018', 'dd-mm-yyyy'), 513756226, 'Roy', 'Karen', 2);
+insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (188, 'Cameron', 'Thompson', to_date('20-07-2017', 'dd-mm-yyyy'), 545599978, 'Tyler', 'Ava', 25);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (192, 'Walter', 'Lewis', to_date('05-02-2011', 'dd-mm-yyyy'), 584016953, 'Philip', 'Brittany', 31);
@@ -3196,9 +3184,9 @@ values (199, 'Anthony', 'Allen', to_date('17-03-2010', 'dd-mm-yyyy'), 544268071,
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (201, 'Isaiah', 'Wright', to_date('03-04-2015', 'dd-mm-yyyy'), 570378447, 'George', 'Amanda', 10);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (205, 'Julia', 'Green', to_date('05-12-2010', 'dd-mm-yyyy'), 597766757, 'Scott', 'Courtney', 5);
+values (204, 'Jacqueline', 'Taylor', to_date('21-02-2018', 'dd-mm-yyyy'), 585308824, 'Jack', 'Courtney', 28);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (206, 'Samuel', 'Campbell', to_date('28-02-2005', 'dd-mm-yyyy'), 552429514, 'Sebastian', 'Lisa', 8);
+values (205, 'Julia', 'Green', to_date('05-12-2010', 'dd-mm-yyyy'), 597766757, 'Scott', 'Courtney', 5);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (208, 'Adam', 'Moore', to_date('25-12-2007', 'dd-mm-yyyy'), 583191610, 'Trevor', 'Ruby', 40);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3212,8 +3200,6 @@ values (214, 'Benjamin', 'Allen', to_date('05-02-2011', 'dd-mm-yyyy'), 515819212
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (217, 'Lily', 'Scott', to_date('02-06-2009', 'dd-mm-yyyy'), 546612610, 'Joshua', 'Sydney', 29);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (218, 'Philip', 'Nguyen', to_date('23-08-2005', 'dd-mm-yyyy'), 526936108, 'Wyatt', 'Lillian', 12);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (221, 'Patricia', 'Garcia', to_date('26-03-2017', 'dd-mm-yyyy'), 530795249, 'Joseph', 'Charlene', 27);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (222, 'Nathan', 'Rodriguez', to_date('11-07-2009', 'dd-mm-yyyy'), 598129305, 'Trevor', 'Monica', 24);
@@ -3221,6 +3207,8 @@ insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathe
 values (223, 'Katherine', 'Nguyen', to_date('28-07-2013', 'dd-mm-yyyy'), 528782998, 'Julian', 'Nicole', 29);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (224, 'Chad', 'Clark', to_date('03-01-2013', 'dd-mm-yyyy'), 560166830, 'Jacob', 'Stephanie', 22);
+insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
+values (225, 'Andrew', 'Thomas', to_date('12-01-2018', 'dd-mm-yyyy'), 534026854, 'Isaac', 'Caroline', 21);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (226, 'Maria', 'Hernandez', to_date('25-04-2009', 'dd-mm-yyyy'), 566892833, 'George', 'Alexis', 27);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3230,11 +3218,11 @@ values (229, 'Shannon', 'Lopez', to_date('17-11-2011', 'dd-mm-yyyy'), 576677565,
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (230, 'Zachary', 'Williams', to_date('17-08-2011', 'dd-mm-yyyy'), 514774796, 'Ryan', 'Agnes', 36);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
+values (231, 'Isaac', 'Hernandez', to_date('07-02-2018', 'dd-mm-yyyy'), 546593702, 'Brian', 'Louise', 22);
+insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (232, 'Isabella', 'Adams', to_date('11-02-2011', 'dd-mm-yyyy'), 540073645, 'Julian', 'Sandra', 12);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (234, 'Diana', 'Clark', to_date('01-02-2014', 'dd-mm-yyyy'), 524258229, 'Joan', 'Nicole', 40);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (238, 'Trevor', 'Taylor', to_date('25-04-2005', 'dd-mm-yyyy'), 536583996, 'Walter', 'Olivia', 20);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (239, 'Felipe', 'Walker', to_date('02-01-2014', 'dd-mm-yyyy'), 597779079, 'Austin', 'Lydia', 18);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3244,8 +3232,6 @@ values (242, 'Penelope', 'Walker', to_date('07-05-2015', 'dd-mm-yyyy'), 52235198
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (244, 'Julia', 'Nguyen', to_date('27-03-2016', 'dd-mm-yyyy'), 594277729, 'Chad', 'Rose', 28);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (248, 'Nancy', 'Lewis', to_date('30-01-2006', 'dd-mm-yyyy'), 512823440, 'Stephen', 'Lauren', 20);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (249, 'Walter', 'Phillips', to_date('10-01-2008', 'dd-mm-yyyy'), 542792234, 'Julian', 'Courtney', 35);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (250, 'Roy', 'Rogers', to_date('23-10-2007', 'dd-mm-yyyy'), 595221830, 'David', 'Linda', 17);
@@ -3253,8 +3239,6 @@ insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathe
 values (252, 'Faith', 'Young', to_date('09-07-2011', 'dd-mm-yyyy'), 515484767, 'Daniel', 'Leslie', 19);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (253, 'Kimberly', 'Williams', to_date('26-01-2009', 'dd-mm-yyyy'), 527819264, 'Kevin', 'Maria', 34);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (254, 'Rebecca', 'Roberts', to_date('24-01-2005', 'dd-mm-yyyy'), 526678219, 'Miguel', 'Courtney', 18);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (255, 'Sebastian', 'Garcia', to_date('19-12-2013', 'dd-mm-yyyy'), 539086091, 'Dennis', 'Jade', 24);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3266,6 +3250,10 @@ values (259, 'Gabriella', 'Garcia', to_date('03-12-2010', 'dd-mm-yyyy'), 5632317
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (262, 'Caroline', 'Scott', to_date('25-04-2011', 'dd-mm-yyyy'), 559372041, 'Austin', 'Julia', 21);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
+values (264, 'Alice', 'Miller', to_date('18-02-2018', 'dd-mm-yyyy'), 552220253, 'Owen', 'Kristen', 30);
+insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
+values (267, 'Bethany', 'Taylor', to_date('22-06-2018', 'dd-mm-yyyy'), 573256488, 'Ethan', 'Alicia', 21);
+insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (268, 'Jasmine', 'Wright', to_date('09-06-2017', 'dd-mm-yyyy'), 570799319, 'Thomas', 'Rose', 39);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (269, 'Penelope', 'Campbell', to_date('27-05-2012', 'dd-mm-yyyy'), 518205192, 'Wyatt', 'Penelope', 19);
@@ -3274,11 +3262,7 @@ values (270, 'Christopher', 'Davis', to_date('03-03-2014', 'dd-mm-yyyy'), 549179
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (272, 'Abraham', 'Moore', to_date('20-02-2011', 'dd-mm-yyyy'), 520336751, 'Abraham', 'Kayla', 10);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (273, 'Nicholas', 'Allen', to_date('26-02-2005', 'dd-mm-yyyy'), 548807005, 'Ezekiel', 'Pamela', 20);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (275, 'Antonio', 'Walker', to_date('05-10-2017', 'dd-mm-yyyy'), 536978813, 'Andrew', 'Danielle', 13);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (277, 'Juan', 'Harris', to_date('11-04-2005', 'dd-mm-yyyy'), 594493653, 'Joseph', 'Lillian', 30);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (278, 'Sharon', 'Rodriguez', to_date('26-01-2007', 'dd-mm-yyyy'), 584292886, 'Gabriel', 'Katherine', 10);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3288,8 +3272,6 @@ values (283, 'Andrew', 'Garcia', to_date('09-05-2013', 'dd-mm-yyyy'), 593034600,
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (286, 'Lisa', 'Lee', to_date('25-11-2009', 'dd-mm-yyyy'), 520724991, 'Ethan', 'Caroline', 31);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (288, 'Joseph', 'Scott', to_date('30-12-2005', 'dd-mm-yyyy'), 590938354, 'Isaac', 'Courtney', 31);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (289, 'Austin', 'Harris', to_date('20-08-2017', 'dd-mm-yyyy'), 584004460, 'Antonio', 'Charlotte', 22);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (290, 'Tiffany', 'Walker', to_date('05-03-2017', 'dd-mm-yyyy'), 540153861, 'Cody', 'Karen', 26);
@@ -3297,10 +3279,6 @@ insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathe
 values (292, 'Julian', 'Miller', to_date('11-02-2017', 'dd-mm-yyyy'), 573122842, 'Patrick', 'Michelle', 27);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (293, 'Katherine', 'Allen', to_date('15-07-2015', 'dd-mm-yyyy'), 590605495, 'Zachary', 'Ava', 17);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (297, 'Chad', 'Wright', to_date('28-07-2005', 'dd-mm-yyyy'), 528989557, 'Dustin', 'Louise', 4);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (298, 'Jacob', 'Williams', to_date('05-01-2005', 'dd-mm-yyyy'), 539690238, 'Nathaniel', 'Rachel', 40);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (299, 'Lillian', 'Campbell', to_date('09-10-2014', 'dd-mm-yyyy'), 525264680, 'Daniel', 'Alana', 1);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3310,13 +3288,9 @@ values (301, 'Luke', 'Johnson', to_date('15-06-2012', 'dd-mm-yyyy'), 511633279, 
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (304, 'Claire', 'Diaz', to_date('11-01-2015', 'dd-mm-yyyy'), 557610951, 'Sebastian', 'Bridget', 37);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (305, 'Ava', 'Robinson', to_date('15-05-2005', 'dd-mm-yyyy'), 545355795, 'Dennis', 'Lydia', 30);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (306, 'Gabriella', 'Harris', to_date('13-09-2016', 'dd-mm-yyyy'), 598700130, 'Aaron', 'Reagan', 18);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (308, 'Cole', 'Moore', to_date('21-10-2016', 'dd-mm-yyyy'), 568873605, 'Aaron', 'Martha', 33);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (311, 'Kelly', 'Hernandez', to_date('24-06-2005', 'dd-mm-yyyy'), 560470721, 'Philip', 'Allison', 31);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (312, 'Joan', 'Taylor', to_date('31-08-2006', 'dd-mm-yyyy'), 588857941, 'Joshua', 'Hayley', 31);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3329,8 +3303,6 @@ insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathe
 values (318, 'Amelia', 'Nguyen', to_date('05-04-2016', 'dd-mm-yyyy'), 511744231, 'Eric', 'Lily', 39);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (319, 'Ezekiel', 'Johnson', to_date('11-06-2009', 'dd-mm-yyyy'), 549479581, 'Shannon', 'Jessica', 22);
-commit;
-prompt 200 records committed...
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (321, 'Theodore', 'Mitchell', to_date('10-02-2013', 'dd-mm-yyyy'), 557209428, 'Adrian', 'Alexandra', 18);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3357,6 +3329,8 @@ insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathe
 values (339, 'Faith', 'Wright', to_date('06-08-2011', 'dd-mm-yyyy'), 582327265, 'Sebastian', 'Kayla', 4);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (341, 'Jacqueline', 'Robinson', to_date('16-04-2013', 'dd-mm-yyyy'), 519969862, 'Cameron', 'Margaret', 24);
+commit;
+prompt 200 records committed...
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (342, 'Derek', 'Robinson', to_date('11-07-2010', 'dd-mm-yyyy'), 564044493, 'Isaac', 'Janet', 8);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3369,8 +3343,6 @@ insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathe
 values (346, 'Dylan', 'Johnson', to_date('20-04-2017', 'dd-mm-yyyy'), 578330696, 'Jack', 'Hayley', 37);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (347, 'Aisha', 'Wright', to_date('08-01-2015', 'dd-mm-yyyy'), 571190461, 'Harold', 'Ashley', 30);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (349, 'Jade', 'Roy', to_date('24-02-2005', 'dd-mm-yyyy'), 570502563, 'Adrian', 'Lucy', 12);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (350, 'Antonio', 'Walker', to_date('06-12-2016', 'dd-mm-yyyy'), 520938719, 'Sebastian', 'Aisha', 4);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3389,8 +3361,6 @@ insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathe
 values (359, 'Eric', 'Allen', to_date('25-05-2015', 'dd-mm-yyyy'), 599020536, 'Richard', 'Bethany', 24);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (360, 'Heather', 'Mitchell', to_date('05-07-2007', 'dd-mm-yyyy'), 573224707, 'Antonio', 'Faith', 33);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (361, 'Felipe', 'Lee', to_date('10-06-2005', 'dd-mm-yyyy'), 511592484, 'Jordan', 'Sandra', 35);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (363, 'Martha', 'Walker', to_date('03-06-2007', 'dd-mm-yyyy'), 574952711, 'Benjamin', 'Lucy', 23);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3412,7 +3382,7 @@ values (376, 'Courtney', 'Cruz', to_date('13-07-2013', 'dd-mm-yyyy'), 565100974,
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (377, 'Rebecca', 'Evans', to_date('23-08-2014', 'dd-mm-yyyy'), 547441855, 'Derek', 'Jennifer', 21);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (380, 'Jennifer', 'Hernandez', to_date('31-03-2005', 'dd-mm-yyyy'), 520194852, 'Oliver', 'Evelyn', 4);
+values (379, 'Sharon', 'Wright', to_date('20-03-2018', 'dd-mm-yyyy'), 525577480, 'John', 'Stephanie', 30);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (384, 'Lisa', 'Clark', to_date('17-08-2012', 'dd-mm-yyyy'), 543853980, 'Cole', 'Linda', 29);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3422,8 +3392,6 @@ values (386, 'Reagan', 'Rogers', to_date('11-05-2013', 'dd-mm-yyyy'), 542615555,
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (388, 'Harold', 'Roy', to_date('01-08-2011', 'dd-mm-yyyy'), 597631551, 'Isaac', 'Caroline', 23);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (390, 'Ronald', 'Miller', to_date('19-06-2006', 'dd-mm-yyyy'), 595377768, 'Philip', 'Sheila', 2);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (391, 'Gabriel', 'Hernandez', to_date('26-02-2013', 'dd-mm-yyyy'), 553250393, 'Isaiah', 'Monica', 24);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (392, 'Sean', 'Rogers', to_date('16-01-2014', 'dd-mm-yyyy'), 564326195, 'Kyle', 'Heather', 11);
@@ -3432,11 +3400,7 @@ values (395, 'Daniel', 'Anderson', to_date('04-05-2011', 'dd-mm-yyyy'), 55174610
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (397, 'Kyle', 'Moore', to_date('02-01-2008', 'dd-mm-yyyy'), 563356205, 'Adrian', 'Isabella', 13);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (399, 'Catherine', 'Moore', to_date('22-01-2006', 'dd-mm-yyyy'), 555223398, 'Nathan', 'Bridget', 36);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (402, 'Brian', 'Rodriguez', to_date('01-04-2009', 'dd-mm-yyyy'), 543721994, 'Ezekiel', 'Agnes', 35);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (403, 'Edward', 'Lopez', to_date('20-03-2005', 'dd-mm-yyyy'), 522170895, 'Travis', 'Alexis', 39);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (404, 'Evelyn', 'Rodriguez', to_date('25-02-2013', 'dd-mm-yyyy'), 529192855, 'Wesley', 'Diana', 24);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3451,8 +3415,6 @@ insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathe
 values (411, 'Lauren', 'Roy', to_date('23-10-2013', 'dd-mm-yyyy'), 550394341, 'Andrew', 'Teresa', 6);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (412, 'Samantha', 'Young', to_date('22-11-2017', 'dd-mm-yyyy'), 522562885, 'Joseph', 'Audrey', 12);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (415, 'Jayden', 'Brown', to_date('28-07-2005', 'dd-mm-yyyy'), 548333734, 'Miguel', 'Lillian', 39);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (416, 'Chad', 'Cruz', to_date('02-01-2011', 'dd-mm-yyyy'), 528206561, 'Jacob', 'Courtney', 6);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3478,8 +3440,6 @@ values (428, 'Dylan', 'Lopez', to_date('19-03-2012', 'dd-mm-yyyy'), 552457681, '
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (429, 'Nathan', 'Campbell', to_date('27-08-2017', 'dd-mm-yyyy'), 559007588, 'Lawrence', 'Meghan', 26);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (431, 'Karen', 'Young', to_date('15-05-2005', 'dd-mm-yyyy'), 531485516, 'Henry', 'Lori', 20);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (434, 'Fiona', 'Moore', to_date('07-06-2009', 'dd-mm-yyyy'), 591181653, 'Jesse', 'Hayley', 38);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (436, 'Amanda', 'Williams', to_date('09-04-2015', 'dd-mm-yyyy'), 558900968, 'Edward', 'Pamela', 27);
@@ -3496,6 +3456,8 @@ values (443, 'Jonathan', 'Moore', to_date('15-06-2013', 'dd-mm-yyyy'), 540772325
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (444, 'Margaret', 'Thomas', to_date('19-11-2008', 'dd-mm-yyyy'), 530511867, 'Samuel', 'Olivia', 24);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
+values (445, 'Karen', 'Roberts', to_date('03-04-2018', 'dd-mm-yyyy'), 582572375, 'Brandon', 'Danielle', 4);
+insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (446, 'Vivian', 'Hernandez', to_date('11-05-2010', 'dd-mm-yyyy'), 553535875, 'Oliver', 'Shirley', 2);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (448, 'Laura', 'Rodriguez', to_date('28-03-2008', 'dd-mm-yyyy'), 510541878, 'Gabriel', 'Angela', 22);
@@ -3505,6 +3467,8 @@ insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathe
 values (451, 'Aaron', 'Walker', to_date('03-05-2007', 'dd-mm-yyyy'), 567835154, 'Lucas', 'Kelly', 17);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (452, 'Albert', 'Rogers', to_date('11-08-2012', 'dd-mm-yyyy'), 528833675, 'Gabriel', 'Stephanie', 38);
+insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
+values (454, 'Andrew', 'Walker', to_date('15-03-2018', 'dd-mm-yyyy'), 593443295, 'David', 'Alicia', 7);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (457, 'Kristen', 'Hernandez', to_date('16-03-2008', 'dd-mm-yyyy'), 546381004, 'Adrian', 'Hannah', 28);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3516,13 +3480,13 @@ values (462, 'Laura', 'Lewis', to_date('06-10-2013', 'dd-mm-yyyy'), 557403039, '
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (463, 'Rose', 'Walker', to_date('10-09-2017', 'dd-mm-yyyy'), 514208009, 'Edward', 'Phoebe', 23);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
+values (464, 'George', 'Scott', to_date('08-05-2018', 'dd-mm-yyyy'), 530547561, 'Javier', 'Cheryl', 23);
+insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (465, 'Sheila', 'Nguyen', to_date('06-10-2008', 'dd-mm-yyyy'), 585737384, 'Austin', 'Isabella', 22);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (468, 'Roy', 'Wright', to_date('26-09-2015', 'dd-mm-yyyy'), 593350352, 'Luke', 'Dorothy', 37);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (472, 'Adam', 'Thomas', to_date('07-06-2014', 'dd-mm-yyyy'), 520558017, 'Leonardo', 'Kimberly', 4);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (474, 'Leah', 'Taylor', to_date('17-06-2006', 'dd-mm-yyyy'), 545462139, 'Cody', 'Maya', 18);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (475, 'Luke', 'Adams', to_date('16-01-2007', 'dd-mm-yyyy'), 543996830, 'Isaiah', 'Joan', 10);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3531,8 +3495,8 @@ insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathe
 values (481, 'Joshua', 'Hall', to_date('29-10-2014', 'dd-mm-yyyy'), 591762226, 'Travis', 'Amelia', 20);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (482, 'Kristen', 'Hernandez', to_date('14-05-2011', 'dd-mm-yyyy'), 528972190, 'Harold', 'Rachel', 5);
-commit;
-prompt 300 records committed...
+insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
+values (483, 'Sophia', 'Rodriguez', to_date('23-04-2018', 'dd-mm-yyyy'), 565043692, 'Derek', 'Jade', 2);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (486, 'Andrew', 'Allen', to_date('12-07-2017', 'dd-mm-yyyy'), 540145845, 'Albert', 'Diana', 30);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3562,9 +3526,13 @@ values (502, 'Joshua', 'Allen', to_date('08-03-2016', 'dd-mm-yyyy'), 554905373, 
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (504, 'Rebecca', 'Campbell', to_date('08-02-2011', 'dd-mm-yyyy'), 555012231, 'Jesse', 'Mia', 27);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
+values (505, 'Charlotte', 'Clark', to_date('10-06-2018', 'dd-mm-yyyy'), 587125922, 'Stephen', 'Angela', 9);
+insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (506, 'Jesse', 'Adams', to_date('16-08-2014', 'dd-mm-yyyy'), 584779557, 'Roy', 'Diana', 34);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (508, 'Stephanie', 'Jones', to_date('08-09-2012', 'dd-mm-yyyy'), 584390599, 'Eric', 'Peyton', 21);
+commit;
+prompt 300 records committed...
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (512, 'Dorothy', 'Davis', to_date('03-08-2010', 'dd-mm-yyyy'), 575881323, 'John', 'Agnes', 15);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3572,17 +3540,9 @@ values (514, 'Joan', 'Garcia', to_date('16-09-2008', 'dd-mm-yyyy'), 543387263, '
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (515, 'Dorothy', 'Lopez', to_date('10-08-2006', 'dd-mm-yyyy'), 594713819, 'Chad', 'Alexis', 13);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (517, 'Andrew', 'Hernandez', to_date('29-03-2006', 'dd-mm-yyyy'), 549660321, 'Cameron', 'Kristen', 24);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (518, 'Isaiah', 'Scott', to_date('29-03-2006', 'dd-mm-yyyy'), 583797642, 'Julian', 'Shirley', 13);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (521, 'Philip', 'Clark', to_date('06-09-2011', 'dd-mm-yyyy'), 579514546, 'Lawrence', 'Hannah', 25);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (522, 'Douglas', 'Moore', to_date('24-03-2010', 'dd-mm-yyyy'), 578874412, 'Zachary', 'Leah', 29);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (523, 'Dorothy', 'Clark', to_date('21-01-2006', 'dd-mm-yyyy'), 529184493, 'Aaron', 'Sheila', 37);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (524, 'Owen', 'Garcia', to_date('17-01-2005', 'dd-mm-yyyy'), 563578217, 'Cole', 'Rebecca', 32);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (526, 'Agnes', 'Jones', to_date('11-12-2013', 'dd-mm-yyyy'), 589199013, 'Austin', 'Danielle', 19);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3603,8 +3563,6 @@ insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathe
 values (537, 'Mia', 'Allen', to_date('28-06-2014', 'dd-mm-yyyy'), 528295129, 'Antonio', 'Isabella', 10);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (538, 'Aaron', 'Lopez', to_date('17-12-2008', 'dd-mm-yyyy'), 558730194, 'Cameron', 'Kelly', 13);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (540, 'Sharon', 'Hernandez', to_date('03-05-2006', 'dd-mm-yyyy'), 560037605, 'Jordan', 'Vivian', 15);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (542, 'Alice', 'Clark', to_date('03-03-2007', 'dd-mm-yyyy'), 599275027, 'Joshua', 'Sheila', 34);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3640,8 +3598,6 @@ values (561, 'Bethany', 'Scott', to_date('15-11-2014', 'dd-mm-yyyy'), 599685652,
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (562, 'Danielle', 'Robinson', to_date('13-06-2007', 'dd-mm-yyyy'), 539099365, 'Henry', 'Nicole', 7);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (563, 'Jonathan', 'Garcia', to_date('01-11-2005', 'dd-mm-yyyy'), 573222939, 'Alan', 'Kimberly', 39);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (566, 'Charles', 'Rodriguez', to_date('11-12-2016', 'dd-mm-yyyy'), 595248105, 'Nathaniel', 'Heather', 19);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (567, 'Stephen', 'Rogers', to_date('31-08-2015', 'dd-mm-yyyy'), 560866111, 'Christopher', 'Charlene', 32);
@@ -3666,8 +3622,6 @@ values (581, 'Wesley', 'Williams', to_date('10-06-2012', 'dd-mm-yyyy'), 51370856
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (583, 'Richard', 'Young', to_date('20-03-2011', 'dd-mm-yyyy'), 562951274, 'Cameron', 'Lucy', 20);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (587, 'Diana', 'King', to_date('11-10-2005', 'dd-mm-yyyy'), 537683003, 'Xavier', 'Nicole', 7);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (588, 'Dennis', 'Scott', to_date('19-04-2009', 'dd-mm-yyyy'), 591061170, 'Keith', 'Kristen', 5);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (589, 'Kelly', 'Rogers', to_date('29-08-2014', 'dd-mm-yyyy'), 596571631, 'Sean', 'Alexis', 20);
@@ -3681,8 +3635,6 @@ insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathe
 values (595, 'Susan', 'Hernandez', to_date('28-09-2014', 'dd-mm-yyyy'), 567304037, 'Brian', 'Linda', 26);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (597, 'Sebastian', 'King', to_date('16-10-2011', 'dd-mm-yyyy'), 534231552, 'John', 'Cecilia', 1);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (599, 'Jade', 'Jones', to_date('05-03-2006', 'dd-mm-yyyy'), 593101954, 'Douglas', 'Lori', 20);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (600, 'Albert', 'Lopez', to_date('16-04-2013', 'dd-mm-yyyy'), 595256806, 'Samuel', 'Leslie', 4);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3708,8 +3660,6 @@ values (613, 'Samantha', 'Lee', to_date('05-02-2009', 'dd-mm-yyyy'), 533722821, 
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (614, 'Sophia', 'Miller', to_date('25-01-2009', 'dd-mm-yyyy'), 590291749, 'Carlos', 'Linda', 36);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (616, 'Philip', 'Anderson', to_date('24-06-2005', 'dd-mm-yyyy'), 595155058, 'Henry', 'Ashley', 15);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (618, 'Sarah', 'Williams', to_date('28-01-2008', 'dd-mm-yyyy'), 563159031, 'Joan', 'Alexis', 6);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (619, 'Michelle', 'Nguyen', to_date('05-08-2017', 'dd-mm-yyyy'), 578867512, 'Joshua', 'Allison', 4);
@@ -3720,6 +3670,8 @@ values (621, 'Laura', 'Robinson', to_date('16-06-2010', 'dd-mm-yyyy'), 525105403
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (622, 'Ronald', 'Lopez', to_date('27-09-2017', 'dd-mm-yyyy'), 548349087, 'Ethan', 'Bethany', 11);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
+values (623, 'Jillian', 'Wilson', to_date('25-02-2018', 'dd-mm-yyyy'), 573589835, 'Robert', 'Molly', 38);
+insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (624, 'Caleb', 'Rodriguez', to_date('24-12-2006', 'dd-mm-yyyy'), 549622450, 'Daniel', 'Stephanie', 40);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (625, 'Samuel', 'Lee', to_date('01-06-2017', 'dd-mm-yyyy'), 523927646, 'Chad', 'Maria', 23);
@@ -3728,15 +3680,15 @@ values (626, 'Antonio', 'Robinson', to_date('17-03-2016', 'dd-mm-yyyy'), 5918886
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (628, 'Isaac', 'Moore', to_date('28-08-2015', 'dd-mm-yyyy'), 534351674, 'Gabriel', 'Danielle', 11);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
+values (629, 'Charlene', 'Johnson', to_date('12-06-2018', 'dd-mm-yyyy'), 588247679, 'Adrian', 'Charlene', 31);
+insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (630, 'Alan', 'Anderson', to_date('22-02-2010', 'dd-mm-yyyy'), 586482014, 'Antonio', 'Deborah', 1);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (632, 'Catherine', 'Nguyen', to_date('15-10-2017', 'dd-mm-yyyy'), 548889300, 'Daniel', 'Madison', 40);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (633, 'Harold', 'Jones', to_date('21-05-2010', 'dd-mm-yyyy'), 518328382, 'Chad', 'Sophia', 16);
-commit;
-prompt 400 records committed...
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (639, 'Isabella', 'Robinson', to_date('19-05-2005', 'dd-mm-yyyy'), 577637063, 'Kyle', 'Evelyn', 11);
+values (638, 'Lawrence', 'Roberts', to_date('31-05-2018', 'dd-mm-yyyy'), 598642402, 'Paul', 'Diana', 23);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (640, 'Lillian', 'Harris', to_date('23-08-2006', 'dd-mm-yyyy'), 563103381, 'Felipe', 'Lisa', 10);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3756,8 +3708,6 @@ values (647, 'Travis', 'Johnson', to_date('23-01-2009', 'dd-mm-yyyy'), 597185745
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (649, 'Monica', 'Lopez', to_date('05-11-2010', 'dd-mm-yyyy'), 586441380, 'Isaac', 'Alexis', 18);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (651, 'Shirley', 'Garcia', to_date('15-06-2006', 'dd-mm-yyyy'), 549206669, 'Christopher', 'Heather', 33);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (653, 'Brittany', 'Mitchell', to_date('24-12-2010', 'dd-mm-yyyy'), 583193338, 'Luke', 'Cecilia', 3);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (655, 'Amelia', 'Walker', to_date('12-03-2010', 'dd-mm-yyyy'), 530183231, 'Austin', 'Kimberly', 39);
@@ -3767,8 +3717,6 @@ insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathe
 values (657, 'Alexandra', 'Garcia', to_date('31-12-2012', 'dd-mm-yyyy'), 588721025, 'Noah', 'Hannah', 25);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (659, 'Jade', 'Young', to_date('09-09-2007', 'dd-mm-yyyy'), 580462552, 'Cody', 'Penelope', 18);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (660, 'Paul', 'Martinez', to_date('13-10-2005', 'dd-mm-yyyy'), 514960332, 'Kyle', 'Samantha', 37);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (661, 'Adam', 'Scott', to_date('11-08-2017', 'dd-mm-yyyy'), 516905686, 'Alan', 'Jacqueline', 25);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3784,7 +3732,9 @@ values (671, 'Sean', 'Robinson', to_date('15-01-2009', 'dd-mm-yyyy'), 517431477,
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (672, 'Bethany', 'Thompson', to_date('23-04-2008', 'dd-mm-yyyy'), 523470854, 'Joseph', 'Lillian', 24);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (676, 'Abigail', 'Miller', to_date('21-01-2006', 'dd-mm-yyyy'), 559512168, 'Xavier', 'Courtney', 13);
+values (673, 'Pamela', 'Williams', to_date('21-03-2018', 'dd-mm-yyyy'), 523531974, 'Oliver', 'Leah', 11);
+commit;
+prompt 400 records committed...
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (677, 'Andrew', 'Rodriguez', to_date('20-12-2010', 'dd-mm-yyyy'), 578362269, 'Jordan', 'Claire', 3);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
@@ -3796,28 +3746,22 @@ values (685, 'Bridget', 'Robinson', to_date('26-06-2010', 'dd-mm-yyyy'), 5598012
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (687, 'Lawrence', 'Garcia', to_date('08-01-2010', 'dd-mm-yyyy'), 521575431, 'Zachary', 'Ashley', 26);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (688, 'Natalie', 'Allen', to_date('03-06-2006', 'dd-mm-yyyy'), 546803125, 'Theodore', 'Meghan', 37);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (689, 'Philip', 'Clark', to_date('13-05-2006', 'dd-mm-yyyy'), 572557971, 'Keith', 'Olivia', 35);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (695, 'Luke', 'Allen', to_date('19-07-2007', 'dd-mm-yyyy'), 533313858, 'Sebastian', 'Samantha', 27);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (696, 'Luna', 'Walker', to_date('11-05-2017', 'dd-mm-yyyy'), 577689639, 'Paul', 'Olivia', 7);
 insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
-values (698, 'Diego', 'Moore', to_date('16-06-2006', 'dd-mm-yyyy'), 558699771, 'Albert', 'Alana', 39);
-insert into STUDENT (student_id, first_name, last_name, birth_date, phone, fathername, mothername, class_id)
 values (699, 'Alexis', 'Hall', to_date('27-06-2010', 'dd-mm-yyyy'), 541105192, 'Javier', 'Abigail', 29);
 commit;
-prompt 436 records loaded
+prompt 408 records loaded
 prompt Enabling foreign key constraints for CLASS_...
-alter table CLASS_ enable constraint SYS_C007437;
-alter table CLASS_ enable constraint SYS_C007438;
+alter table CLASS_ enable constraint SYS_C007538;
+alter table CLASS_ enable constraint SYS_C007539;
 prompt Enabling foreign key constraints for LESSON...
-alter table LESSON enable constraint SYS_C007450;
-alter table LESSON enable constraint SYS_C007451;
-alter table LESSON enable constraint SYS_C007452;
+alter table LESSON enable constraint SYS_C007551;
+alter table LESSON enable constraint SYS_C007552;
+alter table LESSON enable constraint SYS_C007553;
 prompt Enabling foreign key constraints for STUDENT...
-alter table STUDENT enable constraint SYS_C007462;
+alter table STUDENT enable constraint SYS_C007563;
 prompt Enabling triggers for ROOM...
 alter table ROOM enable all triggers;
 prompt Enabling triggers for TEACHER...
